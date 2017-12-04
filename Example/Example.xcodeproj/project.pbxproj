@@ -93,18 +93,18 @@
 			isa = PBXGroup;
 			children = (
 				DAAE65E71FD51C0000778F52 /* AppDelegate.swift */,
+				DAAE65FF1FD5429400778F52 /* AppCoordinator.swift */,
 				DAAE65E91FD51C0000778F52 /* ViewController.swift */,
+				DAAE66031FD543D500778F52 /* ViewCoordinator.swift */,
 				DAAE65EB1FD51C0000778F52 /* Main.storyboard */,
 				DAAE65EE1FD51C0000778F52 /* Assets.xcassets */,
 				DAAE65F01FD51C0000778F52 /* LaunchScreen.storyboard */,
 				DAAE65F31FD51C0000778F52 /* Info.plist */,
 				DAAE65F91FD5206900778F52 /* StaticImport.swift */,
+				DAAE66011FD5436000778F52 /* RepoViewModel.swift */,
+				DAAE66051FD54BE500778F52 /* RepoCell.swift */,
 				DAAE65FB1FD540B500778F52 /* Repo.swift */,
 				DAAE65FD1FD5415F00778F52 /* Api.swift */,
-				DAAE65FF1FD5429400778F52 /* AppCoordinator.swift */,
-				DAAE66011FD5436000778F52 /* RepoViewModel.swift */,
-				DAAE66031FD543D500778F52 /* ViewCoordinator.swift */,
-				DAAE66051FD54BE500778F52 /* RepoCell.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
