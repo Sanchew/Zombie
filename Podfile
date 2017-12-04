@@ -9,18 +9,19 @@ target 'SLCore' do
   # pod 'STRegex'
 
   # pod 'Aspects'
-  pod 'ReSwift','~> 4.0'
+  # pod 'ReSwift','~> 4.0'
   pod 'Moya/RxSwift'
   pod 'RxDataSources'
   pod 'RxCocoa'
   pod 'RxOptional'
   pod 'RxFeedback'
   # pod 'SwiftyJSON'
-  pod 'CocoaLumberjack'
+  # pod 'CocoaLumberjack'
+  pod 'Kingfisher'
 
   pod 'MJRefresh'
-  pod 'MBProgressHUD'
-  pod 'SLCycleImageView'
-  pod 'SLFlowCollectionView'
+  # pod 'MBProgressHUD'
+  # pod 'SLCycleImageView'
+  # pod 'SLFlowCollectionView'
   
 end

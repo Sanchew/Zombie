@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import ReSwift
 import RxSwift
 
 struct Screen {
