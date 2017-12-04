@@ -14,6 +14,12 @@
 		DAAE65EF1FD51C0000778F52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAAE65EE1FD51C0000778F52 /* Assets.xcassets */; };
 		DAAE65F21FD51C0000778F52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAAE65F01FD51C0000778F52 /* LaunchScreen.storyboard */; };
 		DAAE65FA1FD5206900778F52 /* StaticImport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE65F91FD5206900778F52 /* StaticImport.swift */; };
+		DAAE65FC1FD540B500778F52 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE65FB1FD540B500778F52 /* Repo.swift */; };
+		DAAE65FE1FD5415F00778F52 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE65FD1FD5415F00778F52 /* Api.swift */; };
+		DAAE66001FD5429400778F52 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE65FF1FD5429400778F52 /* AppCoordinator.swift */; };
+		DAAE66021FD5436000778F52 /* RepoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE66011FD5436000778F52 /* RepoViewModel.swift */; };
+		DAAE66041FD543D500778F52 /* ViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE66031FD543D500778F52 /* ViewCoordinator.swift */; };
+		DAAE66061FD54BE500778F52 /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE66051FD54BE500778F52 /* RepoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +33,12 @@
 		DAAE65F11FD51C0000778F52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAAE65F31FD51C0000778F52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAAE65F91FD5206900778F52 /* StaticImport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticImport.swift; sourceTree = "<group>"; };
+		DAAE65FB1FD540B500778F52 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		DAAE65FD1FD5415F00778F52 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		DAAE65FF1FD5429400778F52 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		DAAE66011FD5436000778F52 /* RepoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoViewModel.swift; sourceTree = "<group>"; };
+		DAAE66031FD543D500778F52 /* ViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCoordinator.swift; sourceTree = "<group>"; };
+		DAAE66051FD54BE500778F52 /* RepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
 		E7913772AFAAD452F7390261 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +99,12 @@
 				DAAE65F01FD51C0000778F52 /* LaunchScreen.storyboard */,
 				DAAE65F31FD51C0000778F52 /* Info.plist */,
 				DAAE65F91FD5206900778F52 /* StaticImport.swift */,
+				DAAE65FB1FD540B500778F52 /* Repo.swift */,
+				DAAE65FD1FD5415F00778F52 /* Api.swift */,
+				DAAE65FF1FD5429400778F52 /* AppCoordinator.swift */,
+				DAAE66011FD5436000778F52 /* RepoViewModel.swift */,
+				DAAE66031FD543D500778F52 /* ViewCoordinator.swift */,
+				DAAE66051FD54BE500778F52 /* RepoCell.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -242,9 +260,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAAE66001FD5429400778F52 /* AppCoordinator.swift in Sources */,
 				DAAE65EA1FD51C0000778F52 /* ViewController.swift in Sources */,
+				DAAE66021FD5436000778F52 /* RepoViewModel.swift in Sources */,
 				DAAE65FA1FD5206900778F52 /* StaticImport.swift in Sources */,
 				DAAE65E81FD51C0000778F52 /* AppDelegate.swift in Sources */,
+				DAAE66061FD54BE500778F52 /* RepoCell.swift in Sources */,
+				DAAE65FE1FD5415F00778F52 /* Api.swift in Sources */,
+				DAAE65FC1FD540B500778F52 /* Repo.swift in Sources */,
+				DAAE66041FD543D500778F52 /* ViewCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,7 +407,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 68PHY3J9ZA;
+				DEVELOPMENT_TEAM = 72Z44QQ9ZD;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ml.sanchew.Example;
@@ -399,7 +423,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 68PHY3J9ZA;
+				DEVELOPMENT_TEAM = 72Z44QQ9ZD;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ml.sanchew.Example;
