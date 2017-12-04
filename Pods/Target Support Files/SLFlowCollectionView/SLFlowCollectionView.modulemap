@@ -1,6 +1,0 @@
-framework module SLFlowCollectionView {
-  umbrella header "SLFlowCollectionView-umbrella.h"
-
-  export *
-  module * { export * }
-}

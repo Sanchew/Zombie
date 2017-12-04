@@ -1,6 +1,0 @@
-framework module SLCycleImageView {
-  umbrella header "SLCycleImageView-umbrella.h"
-
-  export *
-  module * { export * }
-}
