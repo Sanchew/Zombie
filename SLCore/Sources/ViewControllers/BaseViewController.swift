@@ -10,39 +10,39 @@ import UIKit
 
 import RxSwift
 
-class BaseViewController<VM: BaseViewModel>: UIViewController {
+open class BaseViewController<VM: BaseViewModel>: UIViewController {
 
-    var viewModel: VM!
+    open var viewModel: VM!
     
     
-    var receiver: AnyObserver<EventType> {
+    open var receiver: AnyObserver<EventType> {
         return viewModel.eventReceiver
     }
     
-    override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
         setupBindings()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         updateUI()
     }
 
-    func setupUI() {
+    open func setupUI() {
         
     }
     
-    func updateUI() {
+    open func updateUI() {
         
     }
     
-    func setupBindings() {
+    open func setupBindings() {
         
     }
     
-    override func didReceiveMemoryWarning() {
+    open override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }

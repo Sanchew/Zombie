@@ -9,9 +9,9 @@
 import UIKit
 import RxSwift
 
-struct Screen {
-    static let width = UIScreen.main.bounds.width
-    static let height = UIScreen.main.bounds.height
+public struct Screen {
+    public static let width = UIScreen.main.bounds.width
+    public static let height = UIScreen.main.bounds.height
 }
 
 

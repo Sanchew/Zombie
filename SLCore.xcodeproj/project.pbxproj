@@ -38,6 +38,7 @@
 		DA80B2661FD40AB10047A5F9 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B24B1FD40AB10047A5F9 /* BaseTableViewCell.swift */; };
 		DA80B2671FD40AB10047A5F9 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B24C1FD40AB10047A5F9 /* BaseCollectionViewCell.swift */; };
 		DA80B2681FD40AB10047A5F9 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B24D1FD40AB10047A5F9 /* BaseView.swift */; };
+		DAAE65DA1FD51B4E00778F52 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE65D91FD51B4E00778F52 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		DA80B24B1FD40AB10047A5F9 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		DA80B24C1FD40AB10047A5F9 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		DA80B24D1FD40AB10047A5F9 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		DAAE65D91FD51B4E00778F52 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E39AD567178E844F06E547A1 /* Pods-SLCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLCore.release.xcconfig"; path = "Pods/Target Support Files/Pods-SLCore/Pods-SLCore.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +144,7 @@
 		DA80B22B1FD40AB10047A5F9 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				DAAE65D81FD51B4E00778F52 /* ViewControllers */,
 				DA80B22C1FD40AB10047A5F9 /* ViewModels */,
 				DA80B2301FD40AB10047A5F9 /* Classes */,
 				DA80B2331FD40AB10047A5F9 /* Library */,
@@ -217,6 +220,14 @@
 				DA80B24D1FD40AB10047A5F9 /* BaseView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		DAAE65D81FD51B4E00778F52 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DAAE65D91FD51B4E00778F52 /* BaseViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,6 +384,7 @@
 				DA80B2671FD40AB10047A5F9 /* BaseCollectionViewCell.swift in Sources */,
 				DA80B2521FD40AB10047A5F9 /* GlobalVariable.swift in Sources */,
 				DA80B25D1FD40AB10047A5F9 /* NSObject.swift in Sources */,
+				DAAE65DA1FD51B4E00778F52 /* BaseViewController.swift in Sources */,
 				DA80B2661FD40AB10047A5F9 /* BaseTableViewCell.swift in Sources */,
 				DA80B25F1FD40AB10047A5F9 /* Single+Response.swift in Sources */,
 				DA80B2561FD40AB10047A5F9 /* BaseModel.swift in Sources */,

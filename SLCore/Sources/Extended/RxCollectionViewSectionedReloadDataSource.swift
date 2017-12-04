@@ -12,8 +12,8 @@ import RxDataSources
 
 public extension RxCollectionViewSectionedReloadDataSource {
     
-    public convenience init(configureCell: @escaping ConfigureCell) {
-        self.init(configureCell: configureCell, configureSupplementaryView: { (_,_,_,_) in return UICollectionReusableView(frame: .zero) })
-    }
+//    public convenience init(configureCell: @escaping ConfigureCell) {
+ //       self.init(configureCell: configureCell, configureSupplementaryView: { (_,_,_,_) in return UICollectionReusableView(frame: .zero) })
+  //  }
     
 }

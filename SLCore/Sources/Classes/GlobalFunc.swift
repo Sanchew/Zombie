@@ -9,12 +9,12 @@
 import Foundation
 
 infix operator ??
-func ?? (left: Bool, right: @autoclosure @escaping () -> ()) {
+public func ?? (left: Bool, right: @autoclosure @escaping () -> ()) {
     if !left { right() }
 }
 
 infix operator ?!
-func ?! (left: Bool, right: @autoclosure @escaping ()-> ()) {
+public func ?! (left: Bool, right: @autoclosure @escaping ()-> ()) {
     if left { right() }
 }
 
