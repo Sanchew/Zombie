@@ -44,7 +44,7 @@ extension UIView: AnyDataViewModelCompatible { }
 
 // MARK: - FillData
 public protocol FillingData {
-    func fill(by data: Any)
+    func fill(by data: Any?)
 }
 
 public protocol DataTypeCompromise {
@@ -59,7 +59,7 @@ public extension AnyDataViewModel where Base: DataTypeCompromise {
 }
 
 public extension FillingData where Self: UIView{
-    public func fill(by data: Any) {
+    public func fill(by data: Any?) {
         self.viewModel._datas.onNext(data)
     }
 }
