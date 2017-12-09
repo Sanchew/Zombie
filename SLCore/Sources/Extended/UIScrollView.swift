@@ -61,6 +61,18 @@ public extension Reactive where Base: UIScrollView {
     public var refresh: Observable<RefreshEvent> {
         return self._refresh.asObservable()
     }
+    
+    public var nearBottom: Observable<()> {
+        func isNearBottomEdge(scrollView: UIScrollView, edgeOffset: CGFloat = 20.0) -> Bool {
+            return scrollView.contentOffset.y + scrollView.frame.size.height + edgeOffset > scrollView.contentSize.height
+        }
+        
+        return self.contentOffset.asObservable()
+            .flatMap { _ in
+                return isNearBottomEdge(scrollView: self.base, edgeOffset: 20.0) ? Observable.just(()) : Observable.empty()
+            }
+    }
+    
 }
 
 public extension UIScrollView {
