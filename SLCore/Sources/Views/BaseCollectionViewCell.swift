@@ -11,10 +11,18 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-open class BaseCollectionViewCell<E>: UICollectionViewCell, DataTypeCompromise {
+open class BaseCollectionViewCell<E>: AbstractCollectionViewCell, DataTypeCompromise {
 
     public typealias D = E
-    
+
+    open override class func size(by data: Any? = nil) -> CGSize {
+        return self.size(by: data as? D)
+    }
+
+    open class func size(by data: D?) -> CGSize {
+        return .zero
+    }
+
     open var binder: AnyObserver<D> {
         return Binder(self) { `self`, data in
             self.render(data: data)

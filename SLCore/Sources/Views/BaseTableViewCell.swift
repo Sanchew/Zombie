@@ -10,9 +10,18 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-open class BaseTableViewCell<E>: UITableViewCell, DataTypeCompromise {
+open class BaseTableViewCell<E>: AbstractTableViewCell, DataTypeCompromise {
 
     public typealias D = E
+
+    open override class func height(by data: Any? = nil) -> CGFloat {
+        return self.height(by: data as? D)
+    }
+
+    open class func height(by data: D?) -> CGFloat {
+        return 0
+    }
+
     open var binder: AnyObserver<D> {
         return Binder(self) { `self`, data in
 //            print("don't use data in \(String(describing: type(of: self)))")
