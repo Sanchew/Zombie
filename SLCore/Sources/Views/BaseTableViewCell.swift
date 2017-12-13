@@ -16,7 +16,7 @@ open class BaseTableViewCell<E>: UITableViewCell, DataTypeCompromise {
     open var binder: AnyObserver<D> {
         return Binder(self) { `self`, data in
 //            print("don't use data in \(String(describing: type(of: self)))")
-            self.setup(data: data)
+            self.render(data: data)
             }.asObserver()
     }
     
@@ -55,7 +55,7 @@ open class BaseTableViewCell<E>: UITableViewCell, DataTypeCompromise {
         self.viewModel.datas.bind(to: self.binder).disposed(by: disposeBag)
     }
 
-    open func setup(data: D) {
+    open func render(data: D) {
 
     }
 

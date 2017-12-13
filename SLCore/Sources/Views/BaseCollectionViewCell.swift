@@ -17,7 +17,7 @@ open class BaseCollectionViewCell<E>: UICollectionViewCell, DataTypeCompromise {
     
     open var binder: AnyObserver<D> {
         return Binder(self) { `self`, data in
-            self.setup(data: data)
+            self.render(data: data)
         }.asObserver()
     }
 
@@ -60,7 +60,7 @@ open class BaseCollectionViewCell<E>: UICollectionViewCell, DataTypeCompromise {
         self.viewModel.datas.bind(to: self.binder).disposed(by: disposeBag)
     }
 
-    open func setup(data: D) {
+    open func render(data: D) {
 
     }
 
