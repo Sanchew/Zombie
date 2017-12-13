@@ -15,7 +15,8 @@ open class BaseTableViewCell<E>: UITableViewCell, DataTypeCompromise {
     public typealias D = E
     open var binder: AnyObserver<D> {
         return Binder(self) { `self`, data in
-            print("don't use data in \(String(describing: type(of: self)))")
+//            print("don't use data in \(String(describing: type(of: self)))")
+            self.setup(data: data)
             }.asObserver()
     }
     
@@ -52,6 +53,10 @@ open class BaseTableViewCell<E>: UITableViewCell, DataTypeCompromise {
     
     open func setupBindings() {
         self.viewModel.datas.bind(to: self.binder).disposed(by: disposeBag)
+    }
+
+    open func setup(data: D) {
+
     }
 
     open override func setSelected(_ selected: Bool, animated: Bool) {
