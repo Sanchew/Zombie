@@ -14,20 +14,20 @@ public protocol StoryboardInitialize {
     static var bundle: Bundle? { get }
 }
 
-public extension StoryboardInitialize where Self: UIViewController {
-    
-    public static var identifier: String {
-        return String(describing: self)
-    }
-    
-    public static var storyboard: String {
-        return "Main"
-    }
-    
-    public static var bundle: Bundle? {
-        return nil
-    }
-    
+public extension StoryboardInitialize where Self: AbstractViewController {
+
+//    public static var identifier: String {
+//        return String(describing: self)
+//    }
+//    
+//    public static var storyboard: String {
+//        return "Main"
+//    }
+//    
+//    public static var bundle: Bundle? {
+//        return nil
+//    }
+//    
     public static func make()-> Self {
         let storyboard = UIStoryboard(name: self.storyboard, bundle: self.bundle)
         let instantiateOptinal = storyboard.instantiateViewController(withIdentifier: self.identifier)
@@ -36,7 +36,8 @@ public extension StoryboardInitialize where Self: UIViewController {
         }
         return instance
     }
-    
+
 }
 
-extension UIViewController: StoryboardInitialize { }
+//extension UIViewController: StoryboardInitialize { }
+

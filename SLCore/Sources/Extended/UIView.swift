@@ -60,6 +60,7 @@ public extension AnyDataViewModel where Base: DataTypeCompromise {
 
 public extension FillingData where Self: UIView{
     public func fill(by data: Any?) {
+        guard let data = data else { return }
         self.viewModel._datas.onNext(data)
     }
 }

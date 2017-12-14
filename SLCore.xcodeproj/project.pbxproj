@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7B7752A3FC180673F664C2CF /* Pods_SLCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98276A8CC671D6D9105A75E4 /* Pods_SLCore.framework */; };
+		D71C334C1FE2354C004E434B /* AbstractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71C334B1FE2354C004E434B /* AbstractViewController.swift */; };
 		D7F8220A1FE0D4AE006A8D6D /* AbstractCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F822081FE0D4AE006A8D6D /* AbstractCollectionViewCell.swift */; };
 		D7F8220B1FE0D4AE006A8D6D /* AbstractTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F822091FE0D4AE006A8D6D /* AbstractTableViewCell.swift */; };
 		DA80B1841FD3FC3C0047A5F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B1831FD3FC3C0047A5F9 /* AppDelegate.swift */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		22257FE120BDD918124A98C6 /* Pods-SLCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLCore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SLCore/Pods-SLCore.debug.xcconfig"; sourceTree = "<group>"; };
 		98276A8CC671D6D9105A75E4 /* Pods_SLCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SLCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D71C334B1FE2354C004E434B /* AbstractViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractViewController.swift; sourceTree = "<group>"; };
 		D7F822081FE0D4AE006A8D6D /* AbstractCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractCollectionViewCell.swift; sourceTree = "<group>"; };
 		D7F822091FE0D4AE006A8D6D /* AbstractTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractTableViewCell.swift; sourceTree = "<group>"; };
 		DA80B1801FD3FC3C0047A5F9 /* SLCore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLCore.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -228,6 +230,7 @@
 		DAAE65D81FD51B4E00778F52 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D71C334B1FE2354C004E434B /* AbstractViewController.swift */,
 				DAAE65D91FD51B4E00778F52 /* BaseViewController.swift */,
 			);
 			path = ViewControllers;
@@ -398,6 +401,7 @@
 				D7F8220B1FE0D4AE006A8D6D /* AbstractTableViewCell.swift in Sources */,
 				DA80B1861FD3FC3C0047A5F9 /* ViewController.swift in Sources */,
 				DA80B2531FD40AB10047A5F9 /* StoryboardInitializable.swift in Sources */,
+				D71C334C1FE2354C004E434B /* AbstractViewController.swift in Sources */,
 				DA80B24F1FD40AB10047A5F9 /* BaseViewModel.swift in Sources */,
 				DA80B24E1FD40AB10047A5F9 /* PaginationViewModel.swift in Sources */,
 				DA80B2631FD40AB10047A5F9 /* UIViewController.swift in Sources */,

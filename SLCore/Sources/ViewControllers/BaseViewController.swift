@@ -10,10 +10,9 @@ import UIKit
 
 import RxSwift
 
-open class BaseViewController<VM: BaseViewModel>: UIViewController {
+open class BaseViewController<VM: BaseViewModel>: AbstractViewController {
 
     open var viewModel: VM!
-    
     
     open var receiver: AnyObserver<EventType> {
         return viewModel.eventReceiver
