@@ -9,6 +9,10 @@ import UIKit
 
 public extension UIColor {
     
+    public static func rgb(_ with: Int) -> UIColor {
+        return UIColor(rgb: with)
+    }
+    
     public convenience init(rgb: Int) {
         self.init(rgb: rgb, alpha: 1.0)
     }

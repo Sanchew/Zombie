@@ -41,6 +41,9 @@
 		DA80B2671FD40AB10047A5F9 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B24C1FD40AB10047A5F9 /* BaseCollectionViewCell.swift */; };
 		DA80B2681FD40AB10047A5F9 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B24D1FD40AB10047A5F9 /* BaseView.swift */; };
 		DAAE65DA1FD51B4E00778F52 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE65D91FD51B4E00778F52 /* BaseViewController.swift */; };
+		DABB89A61FEA688E003893BC /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABB89A31FEA688D003893BC /* DispatchQueue.swift */; };
+		DABB89A71FEA688E003893BC /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABB89A41FEA688D003893BC /* UIColor.swift */; };
+		DABB89A81FEA688E003893BC /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABB89A51FEA688D003893BC /* Codable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +84,9 @@
 		DA80B24C1FD40AB10047A5F9 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		DA80B24D1FD40AB10047A5F9 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		DAAE65D91FD51B4E00778F52 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		DABB89A31FEA688D003893BC /* DispatchQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
+		DABB89A41FEA688D003893BC /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		DABB89A51FEA688D003893BC /* Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
 		E39AD567178E844F06E547A1 /* Pods-SLCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLCore.release.xcconfig"; path = "Pods/Target Support Files/Pods-SLCore/Pods-SLCore.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -198,6 +204,9 @@
 		DA80B2391FD40AB10047A5F9 /* Extended */ = {
 			isa = PBXGroup;
 			children = (
+				DABB89A51FEA688D003893BC /* Codable.swift */,
+				DABB89A31FEA688D003893BC /* DispatchQueue.swift */,
+				DABB89A41FEA688D003893BC /* UIColor.swift */,
 				DA80B23A1FD40AB10047A5F9 /* UIScrollView.swift */,
 				DA80B23B1FD40AB10047A5F9 /* UIView.swift */,
 				DA80B23D1FD40AB10047A5F9 /* Event.swift */,
@@ -390,6 +399,7 @@
 				DA80B2671FD40AB10047A5F9 /* BaseCollectionViewCell.swift in Sources */,
 				DA80B2521FD40AB10047A5F9 /* GlobalVariable.swift in Sources */,
 				DA80B25D1FD40AB10047A5F9 /* NSObject.swift in Sources */,
+				DABB89A71FEA688E003893BC /* UIColor.swift in Sources */,
 				DAAE65DA1FD51B4E00778F52 /* BaseViewController.swift in Sources */,
 				DA80B2661FD40AB10047A5F9 /* BaseTableViewCell.swift in Sources */,
 				DA80B25F1FD40AB10047A5F9 /* Single+Response.swift in Sources */,
@@ -401,6 +411,7 @@
 				D7F8220B1FE0D4AE006A8D6D /* AbstractTableViewCell.swift in Sources */,
 				DA80B1861FD3FC3C0047A5F9 /* ViewController.swift in Sources */,
 				DA80B2531FD40AB10047A5F9 /* StoryboardInitializable.swift in Sources */,
+				DABB89A81FEA688E003893BC /* Codable.swift in Sources */,
 				D71C334C1FE2354C004E434B /* AbstractViewController.swift in Sources */,
 				DA80B24F1FD40AB10047A5F9 /* BaseViewModel.swift in Sources */,
 				DA80B24E1FD40AB10047A5F9 /* PaginationViewModel.swift in Sources */,
@@ -409,6 +420,7 @@
 				D7F8220A1FE0D4AE006A8D6D /* AbstractCollectionViewCell.swift in Sources */,
 				DA80B2621FD40AB10047A5F9 /* UIButton.swift in Sources */,
 				DA80B1841FD3FC3C0047A5F9 /* AppDelegate.swift in Sources */,
+				DABB89A61FEA688E003893BC /* DispatchQueue.swift in Sources */,
 				DA80B2571FD40AB10047A5F9 /* UIScrollView.swift in Sources */,
 				DA80B2511FD40AB10047A5F9 /* GlobalFunc.swift in Sources */,
 				DA80B2651FD40AB10047A5F9 /* ObservableType.swift in Sources */,
