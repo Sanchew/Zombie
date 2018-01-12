@@ -70,13 +70,13 @@ extension UIView: FillingData { }
 // MARK: -
 public extension UIView {
     
-    public func addConstraints(with formats: [String], views: [String: UIView]) {
+    public func addConstraints(with formats: [String], views: [String: Any]) {
         formats.forEach { (format) in
             addConstraints(with: format, views: views)
         }
     }
     
-    public func addConstraints(with format: String, views:[String: UIView]) {
+    public func addConstraints(with format: String, views:[String: Any]) {
        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: format, options: .directionLeadingToTrailing, metrics: nil, views: views))
     }
     

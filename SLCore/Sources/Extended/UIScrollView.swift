@@ -45,11 +45,11 @@ public extension Reactive where Base: UIScrollView {
         return Binder<RefreshState>(self.base) { base, state in
             switch state {
             case .end:
-                if base.mj_header.isRefreshing {
+                if let header = base.mj_header, header.isRefreshing {
                     base.mj_header.endRefreshing()
                     base.mj_footer.resetNoMoreData()
-                }else {
-                    base.mj_footer.endRefreshing()
+                }else if let footer = base.mj_footer {
+                    footer.endRefreshing()
                 }
             case .endWithNoMore:
                 base.mj_footer.endRefreshingWithNoMoreData()

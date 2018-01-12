@@ -11,6 +11,9 @@
 		D71C334C1FE2354C004E434B /* AbstractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71C334B1FE2354C004E434B /* AbstractViewController.swift */; };
 		D7F8220A1FE0D4AE006A8D6D /* AbstractCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F822081FE0D4AE006A8D6D /* AbstractCollectionViewCell.swift */; };
 		D7F8220B1FE0D4AE006A8D6D /* AbstractTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F822091FE0D4AE006A8D6D /* AbstractTableViewCell.swift */; };
+		DA278ACC2004ADD800012B30 /* AutoDismissKeyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA278ACB2004ADD800012B30 /* AutoDismissKeyboardable.swift */; };
+		DA478C702008A4570051D6C1 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA478C6E2008A4560051D6C1 /* Array.swift */; };
+		DA478C712008A4570051D6C1 /* Nil.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA478C6F2008A4560051D6C1 /* Nil.swift */; };
 		DA80B1841FD3FC3C0047A5F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B1831FD3FC3C0047A5F9 /* AppDelegate.swift */; };
 		DA80B1861FD3FC3C0047A5F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B1851FD3FC3C0047A5F9 /* ViewController.swift */; };
 		DA80B1891FD3FC3C0047A5F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA80B1871FD3FC3C0047A5F9 /* Main.storyboard */; };
@@ -52,6 +55,9 @@
 		D71C334B1FE2354C004E434B /* AbstractViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractViewController.swift; sourceTree = "<group>"; };
 		D7F822081FE0D4AE006A8D6D /* AbstractCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractCollectionViewCell.swift; sourceTree = "<group>"; };
 		D7F822091FE0D4AE006A8D6D /* AbstractTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractTableViewCell.swift; sourceTree = "<group>"; };
+		DA278ACB2004ADD800012B30 /* AutoDismissKeyboardable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoDismissKeyboardable.swift; sourceTree = "<group>"; };
+		DA478C6E2008A4560051D6C1 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		DA478C6F2008A4560051D6C1 /* Nil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nil.swift; sourceTree = "<group>"; };
 		DA80B1801FD3FC3C0047A5F9 /* SLCore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLCore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA80B1831FD3FC3C0047A5F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA80B1851FD3FC3C0047A5F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -204,6 +210,9 @@
 		DA80B2391FD40AB10047A5F9 /* Extended */ = {
 			isa = PBXGroup;
 			children = (
+				DA478C6E2008A4560051D6C1 /* Array.swift */,
+				DA478C6F2008A4560051D6C1 /* Nil.swift */,
+				DA278ACB2004ADD800012B30 /* AutoDismissKeyboardable.swift */,
 				DABB89A51FEA688D003893BC /* Codable.swift */,
 				DABB89A31FEA688D003893BC /* DispatchQueue.swift */,
 				DABB89A41FEA688D003893BC /* UIColor.swift */,
@@ -398,8 +407,10 @@
 				DA80B2581FD40AB10047A5F9 /* UIView.swift in Sources */,
 				DA80B2671FD40AB10047A5F9 /* BaseCollectionViewCell.swift in Sources */,
 				DA80B2521FD40AB10047A5F9 /* GlobalVariable.swift in Sources */,
+				DA278ACC2004ADD800012B30 /* AutoDismissKeyboardable.swift in Sources */,
 				DA80B25D1FD40AB10047A5F9 /* NSObject.swift in Sources */,
 				DABB89A71FEA688E003893BC /* UIColor.swift in Sources */,
+				DA478C712008A4570051D6C1 /* Nil.swift in Sources */,
 				DAAE65DA1FD51B4E00778F52 /* BaseViewController.swift in Sources */,
 				DA80B2661FD40AB10047A5F9 /* BaseTableViewCell.swift in Sources */,
 				DA80B25F1FD40AB10047A5F9 /* Single+Response.swift in Sources */,
@@ -409,6 +420,7 @@
 				DA80B2541FD40AB10047A5F9 /* BaseCoordinator.swift in Sources */,
 				DA80B2611FD40AB10047A5F9 /* UIResponder.swift in Sources */,
 				D7F8220B1FE0D4AE006A8D6D /* AbstractTableViewCell.swift in Sources */,
+				DA478C702008A4570051D6C1 /* Array.swift in Sources */,
 				DA80B1861FD3FC3C0047A5F9 /* ViewController.swift in Sources */,
 				DA80B2531FD40AB10047A5F9 /* StoryboardInitializable.swift in Sources */,
 				DABB89A81FEA688E003893BC /* Codable.swift in Sources */,

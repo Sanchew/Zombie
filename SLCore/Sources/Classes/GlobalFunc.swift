@@ -8,13 +8,13 @@
 
 import Foundation
 
-infix operator ??
-public func ?? (left: Bool, right: @autoclosure @escaping () -> ()) {
+infix operator ?!
+public func ?! (left: Bool, right: @autoclosure @escaping () -> ()) {
     if !left { right() }
 }
 
-infix operator ?!
-public func ?! (left: Bool, right: @autoclosure @escaping ()-> ()) {
+infix operator !!
+public func !! (left: Bool, right: @autoclosure @escaping ()-> ()) {
     if left { right() }
 }
 

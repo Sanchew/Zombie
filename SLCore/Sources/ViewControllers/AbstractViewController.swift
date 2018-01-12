@@ -20,6 +20,16 @@ open class AbstractViewController: UIViewController, StoryboardInitialize {
     open class var bundle: Bundle? {
         return nil
     }
+    
+    open override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let this = self as? AutoDismissKeyboardable {
+            for input in this.inputViews where input.isFirstResponder {
+                input.resignFirstResponder()
+                return
+            }
+        }
+        super.touchesEnded(touches, with: event)
+    }
 
     override open func viewDidLoad() {
         super.viewDidLoad()

@@ -19,6 +19,7 @@ public extension ObservableType {
     public func validMap<R: Occupiable>(_ transform: @escaping (Self.E) throws -> R) -> RxSwift.Observable<R> {
         return self.map(transform).filterEmpty()
     }
+    
 }
 
 public extension ObservableType where E: Occupiable {
@@ -27,4 +28,23 @@ public extension ObservableType where E: Occupiable {
     }
 }
 
+public extension ObservableType where E: Equatable {
+    
+    public func filter(_ e: E) -> Observable<E> {
+        return self.filter{ $0 == e}
+    }
+    
+    public func filterAndMapVoid(_ e: E) -> Observable<Void> {
+        return self.filter(e).map{ _ in () }
+    }
+    
+    public func filter<R>(_ e: E, transform: @escaping (E) throws -> R) -> Observable<R> {
+        return filter(e).map(transform)
+    }
+    
+    public func filter<R>(_ e: E, transform: @escaping (E) throws -> R?) -> Observable<R> {
+        return filter(e).availableMap(transform)
+    }
+    
+}
 
