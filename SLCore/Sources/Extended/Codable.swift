@@ -36,7 +36,7 @@ public func <<<Key,Value: Decodable>(container: KeyedDecodingContainer<Key>, key
 infix operator <<~
 public func <<~<Key,Value: Decodable>(container: KeyedDecodingContainer<Key>, key: Key) -> Value? {
     if container.contains(key) {
-        return try! container.decode(Value.self, forKey: key)
+        return try! container.decodeIfPresent(Value.self, forKey: key)
     }
     return nil
 }

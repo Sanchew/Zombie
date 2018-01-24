@@ -31,7 +31,7 @@ public extension ObservableType where E: Occupiable {
 public extension ObservableType where E: Equatable {
     
     public func filter(_ e: E) -> Observable<E> {
-        return self.filter{ $0 == e}
+        return self.filter{ $0 == e }
     }
     
     public func filterAndMapVoid(_ e: E) -> Observable<Void> {

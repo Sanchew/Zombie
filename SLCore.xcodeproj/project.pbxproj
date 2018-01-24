@@ -43,6 +43,7 @@
 		DA80B2661FD40AB10047A5F9 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B24B1FD40AB10047A5F9 /* BaseTableViewCell.swift */; };
 		DA80B2671FD40AB10047A5F9 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B24C1FD40AB10047A5F9 /* BaseCollectionViewCell.swift */; };
 		DA80B2681FD40AB10047A5F9 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80B24D1FD40AB10047A5F9 /* BaseView.swift */; };
+		DAAD3269201832A000C5C476 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAD3268201832A000C5C476 /* UITableView.swift */; };
 		DAAE65DA1FD51B4E00778F52 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE65D91FD51B4E00778F52 /* BaseViewController.swift */; };
 		DABB89A61FEA688E003893BC /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABB89A31FEA688D003893BC /* DispatchQueue.swift */; };
 		DABB89A71FEA688E003893BC /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABB89A41FEA688D003893BC /* UIColor.swift */; };
@@ -89,6 +90,7 @@
 		DA80B24B1FD40AB10047A5F9 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		DA80B24C1FD40AB10047A5F9 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		DA80B24D1FD40AB10047A5F9 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		DAAD3268201832A000C5C476 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		DAAE65D91FD51B4E00778F52 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		DABB89A31FEA688D003893BC /* DispatchQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
 		DABB89A41FEA688D003893BC /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 				DA80B2461FD40AB10047A5F9 /* UIViewController.swift */,
 				DA80B2471FD40AB10047A5F9 /* UIImageView.swift */,
 				DA80B2481FD40AB10047A5F9 /* ObservableType.swift */,
+				DAAD3268201832A000C5C476 /* UITableView.swift */,
 			);
 			path = Extended;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				DA80B2681FD40AB10047A5F9 /* BaseView.swift in Sources */,
 				DA80B2581FD40AB10047A5F9 /* UIView.swift in Sources */,
 				DA80B2671FD40AB10047A5F9 /* BaseCollectionViewCell.swift in Sources */,
+				DAAD3269201832A000C5C476 /* UITableView.swift in Sources */,
 				DA80B2521FD40AB10047A5F9 /* GlobalVariable.swift in Sources */,
 				DA278ACC2004ADD800012B30 /* AutoDismissKeyboardable.swift in Sources */,
 				DA80B25D1FD40AB10047A5F9 /* NSObject.swift in Sources */,

@@ -124,7 +124,7 @@ public extension UIViewInitWithNib where Self: UIView {
     }
     
     public static func load(from nibName: String, owner: Any? = nil, options: [AnyHashable: Any]? = nil) -> Self {
-        let ins = UINib(nibName: nibName, bundle: nil).instantiate(withOwner: owner, options: options).last
+        let ins = UINib(nibName: nibName, bundle: nil).instantiate(withOwner: owner, options: options).first
         guard let instance = ins as? Self else {
             fatalError("Couldn't instantiate view with nibName \(NSStringFromClass(self))")
         }
