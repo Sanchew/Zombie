@@ -10,7 +10,7 @@ target 'SLCore' do
 
   # pod 'Aspects'
   # pod 'ReSwift','~> 4.0'
-  pod 'Moya/RxSwift'
+  # pod 'Moya/RxSwift'
   pod 'RxDataSources'
   pod 'RxCocoa'
   pod 'RxOptional'

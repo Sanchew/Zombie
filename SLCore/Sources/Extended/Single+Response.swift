@@ -9,14 +9,15 @@
 import Foundation
 import RxSwift
 import RxOptional
-import Moya
+//import Moya
 
-extension PrimitiveSequence where TraitType == SingleTrait, ElementType == Response {
-    
+//extension PrimitiveSequence where TraitType == SingleTrait, ElementType == Response {
+
 //    public func availableMap<D: Decodable>(_ type: D.Type, atKeyPath keyPath: String? = nil, using decoder: JSONDecoder = JSONDecoder()) -> Single<D> {
 //        return flatMap { response -> Single<D> in
 //            return Single.just(try response.map(type, atKeyPath: keyPath, using: decoder))
 //        }
 //    }
     
-}
+//}
+

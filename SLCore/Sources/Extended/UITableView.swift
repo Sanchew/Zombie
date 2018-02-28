@@ -11,11 +11,11 @@ import UIKit
 extension UITableView {
     
     public func register(with nibName: String) {
-        self.register(UINib(nibName: nibName, bundle: nil), forCellWithReuseIdentifier: nibName)
+        self.register(UINib(nibName: nibName, bundle: nil), forCellReuseIdentifier: nibName)
     }
     
     public func register(with type: UICollectionViewCell.Type) {
-        self.register(type, forCellWithReuseIdentifier: type.identifier)
+        self.register(type, forCellReuseIdentifier: type.identifier)
     }
     
 }

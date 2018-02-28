@@ -12,19 +12,8 @@ import RxSwift
 import RxCocoa
 import MJRefresh
 
-public enum Refresh {
-    case header, footer, all
-}
 
-public enum RefreshEvent {
-    case up, down
-}
-
-public enum RefreshState {
-    case end, endWithNoMore
-}
-
-private var _refreshKey = "edgeDrop"
+private var _refreshKey = "_refresh"
 
 public extension Reactive where Base: UIScrollView {
     fileprivate var _refresh: PublishSubject<RefreshEvent> {
@@ -86,6 +75,7 @@ public extension UIScrollView {
         default:
             setupHeader()
             setupFooter()
+            self.mj_footer.isHidden = true
         }
     }
     

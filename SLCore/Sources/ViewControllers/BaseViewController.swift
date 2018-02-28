@@ -18,28 +18,6 @@ open class BaseViewController<VM: BaseViewModel>: AbstractViewController {
         return viewModel.eventReceiver
     }
     
-    open override func viewDidLoad() {
-        super.viewDidLoad()
-        setupUI()
-        setupBindings()
-    }
-    
-    open override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        updateUI()
-    }
-
-    open func setupUI() {
-        
-    }
-    
-    open func updateUI() {
-        
-    }
-    
-    open func setupBindings() {
-        
-    }
     
     open override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

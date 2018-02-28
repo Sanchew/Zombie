@@ -31,15 +31,28 @@ open class AbstractViewController: UIViewController, StoryboardInitialize {
         super.touchesEnded(touches, with: event)
     }
 
-    override open func viewDidLoad() {
+    
+    open override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupUI()
+        setupBindings()
     }
-
-    override open func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    open override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        updateUI()
+    }
+    
+    open func setupUI() {
+        
+    }
+    
+    open func updateUI() {
+        
+    }
+    
+    open func setupBindings() {
+        
     }
     
 
