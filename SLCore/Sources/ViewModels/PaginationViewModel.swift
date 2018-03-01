@@ -10,11 +10,10 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-open class PaginationViewModel<V>: DataViewModel<V> {
+open class PaginationViewModel<V>: DataViewModel<V>, Refreshable {
     
     // MARK: - Protected
     open let _page = Variable<Int>(1)
-    open let _fliped = PublishSubject<RefreshState>()
     
     // MARK: - Inputs
     open var flip: AnyObserver<RefreshEvent> {
@@ -28,9 +27,10 @@ open class PaginationViewModel<V>: DataViewModel<V> {
             }.asObserver()
     }
     
-    // MARK: - Outputs
-    open var fliped: Observable<RefreshState> {
-        return _fliped.asObservable()
+    open override func setupBindings() {
+        super.setupBindings()
+        self.refresh.bind(to: self.flip).disposed(by: disposeBag)
     }
     
 }
+

@@ -68,7 +68,7 @@ extension Refreshable {
         return self._refresh.asObservable()
     }
     
-    func refreshBind(to scrollView: UIScrollView, refresh: Refresh = .all) -> Disposable {
+    public func refreshBind(to scrollView: UIScrollView, refresh: Refresh = .all) -> Disposable {
         var initHeader: Bool = false, initFooter: Bool = false
         switch refresh {
         case .all:
@@ -96,12 +96,12 @@ extension Refreshable {
             case .end:
                 if let header = scrollView.mj_header, header.isRefreshing {
                     scrollView.mj_header.endRefreshing()
-                    scrollView.mj_footer.isHidden = false
                     scrollView.mj_footer.resetNoMoreData()
                 }else if let footer = scrollView.mj_footer {
                     footer.endRefreshing()
-                }else {
-                    scrollView.mj_footer.isHidden = false
+                }
+                if let footer = scrollView.mj_footer, footer.isHidden {
+                    footer.isHidden = false
                 }
             case .endWithNoMore:
                 scrollView.mj_footer.endRefreshingWithNoMoreData()
