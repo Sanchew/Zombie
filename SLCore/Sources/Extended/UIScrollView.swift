@@ -37,8 +37,10 @@ public extension Reactive where Base: UIScrollView {
                 if let header = base.mj_header, header.isRefreshing {
                     base.mj_header.endRefreshing()
                     base.mj_footer.resetNoMoreData()
-                }else if let footer = base.mj_footer {
+                }else if let footer = base.mj_footer, footer.isRefreshing {
                     footer.endRefreshing()
+                }else {
+                    base.mj_footer.isHidden = false
                 }
             case .endWithNoMore:
                 base.mj_footer.endRefreshingWithNoMoreData()

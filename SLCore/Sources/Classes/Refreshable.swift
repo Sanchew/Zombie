@@ -100,6 +100,8 @@ extension Refreshable {
                     scrollView.mj_footer.resetNoMoreData()
                 }else if let footer = scrollView.mj_footer {
                     footer.endRefreshing()
+                }else {
+                    scrollView.mj_footer.isHidden = false
                 }
             case .endWithNoMore:
                 scrollView.mj_footer.endRefreshingWithNoMoreData()
