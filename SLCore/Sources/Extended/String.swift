@@ -46,7 +46,7 @@ public extension String {
             style.lineBreakMode = .byCharWrapping
             _attributes[NSAttributedStringKey.paragraphStyle] = style
         }
-        return NSString(string: self).boundingRect(with: size, options: options, attributes: attributes, context: nil).size
+        return NSString(string: self).boundingRect(with: size, options: options, attributes: _attributes, context: nil).size
     }
     
 }
