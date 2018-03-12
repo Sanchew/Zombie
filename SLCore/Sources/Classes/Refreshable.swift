@@ -23,7 +23,11 @@ public enum RefreshState {
 }
 
 public protocol Refreshable {
-    
+}
+
+public protocol RefreshableUI {
+    func setupHeader(scrollView: UIScrollView, block: @escaping ()->())
+    func setupFooter(scrollView: UIScrollView, block: @escaping ()->())
 }
 
 
@@ -81,22 +85,33 @@ extension Refreshable {
         }
         let refresh = self._refresh
         if initFooter {
-            scrollView.mj_footer = MJRefreshAutoNormalFooter(refreshingBlock: {
+            let block = {
                 refresh.onNext(.up)
-            })
+            }
+            if let ui = self as? RefreshableUI {
+                ui.setupFooter(scrollView: scrollView, block: block)
+            }else {
+                scrollView.mj_footer = MJRefreshAutoNormalFooter(refreshingBlock: block)
+            }
         }
         if initHeader {
-            scrollView.mj_header = MJRefreshNormalHeader(refreshingBlock: {
+            let block = {
+                scrollView.mj_footer?.isHidden = true
                 refresh.onNext(.down)
-            })
+            }
+            if let ui = self as? RefreshableUI {
+                ui.setupHeader(scrollView: scrollView, block: block)
+            }else {
+                scrollView.mj_header = MJRefreshNormalHeader(refreshingBlock: block)
+            }
             scrollView.mj_footer?.isHidden = true
         }
-        return self._refreshStatus.subscribe(onNext: { (state) in
+        return self._refreshStatus.delay(0, scheduler: MainScheduler.asyncInstance).subscribe(onNext: { (state) in
             switch state {
             case .end:
                 if let header = scrollView.mj_header, header.isRefreshing {
                     scrollView.mj_header.endRefreshing()
-                    scrollView.mj_footer.resetNoMoreData()
+                    scrollView.mj_footer?.resetNoMoreData()
                 }else if let footer = scrollView.mj_footer {
                     footer.endRefreshing()
                 }
@@ -104,7 +119,8 @@ extension Refreshable {
                     footer.isHidden = false
                 }
             case .endWithNoMore:
-                scrollView.mj_footer.endRefreshingWithNoMoreData()
+                scrollView.mj_header?.endRefreshing()
+                scrollView.mj_footer?.endRefreshingWithNoMoreData()
             }
         }, onDisposed: {
             scrollView.mj_header = nil
