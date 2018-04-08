@@ -49,7 +49,7 @@ open class ViewModelType: NSObject {
     
     // MARK: - Protected
     open var _event = PublishSubject<EventType>()
-    
+
     // MARK: - Inputs
     open var eventReceiver: AnyObserver<EventType> {
         return _event.asObserver()

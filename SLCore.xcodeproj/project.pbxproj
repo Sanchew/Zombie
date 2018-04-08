@@ -47,6 +47,8 @@
 		DABB89A61FEA688E003893BC /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABB89A31FEA688D003893BC /* DispatchQueue.swift */; };
 		DABB89A71FEA688E003893BC /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABB89A41FEA688D003893BC /* UIColor.swift */; };
 		DABB89A81FEA688E003893BC /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABB89A51FEA688D003893BC /* Codable.swift */; };
+		DAEDB5D82074D95F00DC14B9 /* UITableView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDB5D72074D95F00DC14B9 /* UITableView+Rx.swift */; };
+		DAEDB5DA2074DA7300DC14B9 /* UICollectionView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDB5D92074DA7300DC14B9 /* UICollectionView+Rx.swift */; };
 		DAFE9AC5202D918F00B407B5 /* Refreshable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE9AC4202D918F00B407B5 /* Refreshable.swift */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +96,8 @@
 		DABB89A31FEA688D003893BC /* DispatchQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
 		DABB89A41FEA688D003893BC /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		DABB89A51FEA688D003893BC /* Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
+		DAEDB5D72074D95F00DC14B9 /* UITableView+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Rx.swift"; sourceTree = "<group>"; };
+		DAEDB5D92074DA7300DC14B9 /* UICollectionView+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Rx.swift"; sourceTree = "<group>"; };
 		DAFE9AC4202D918F00B407B5 /* Refreshable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Refreshable.swift; sourceTree = "<group>"; };
 		E39AD567178E844F06E547A1 /* Pods-SLCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLCore.release.xcconfig"; path = "Pods/Target Support Files/Pods-SLCore/Pods-SLCore.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -213,6 +217,7 @@
 		DA80B2391FD40AB10047A5F9 /* Extended */ = {
 			isa = PBXGroup;
 			children = (
+				DAEDB5D72074D95F00DC14B9 /* UITableView+Rx.swift */,
 				DA478C6F2008A4560051D6C1 /* Nil.swift */,
 				DA278ACB2004ADD800012B30 /* AutoDismissKeyboardable.swift */,
 				DABB89A51FEA688D003893BC /* Codable.swift */,
@@ -232,6 +237,7 @@
 				DA80B2471FD40AB10047A5F9 /* UIImageView.swift */,
 				DA80B2481FD40AB10047A5F9 /* ObservableType.swift */,
 				DAAD3268201832A000C5C476 /* UITableView.swift */,
+				DAEDB5D92074DA7300DC14B9 /* UICollectionView+Rx.swift */,
 			);
 			path = Extended;
 			sourceTree = "<group>";
@@ -421,8 +427,10 @@
 				DA80B1861FD3FC3C0047A5F9 /* ViewController.swift in Sources */,
 				DA80B2531FD40AB10047A5F9 /* StoryboardInitializable.swift in Sources */,
 				DABB89A81FEA688E003893BC /* Codable.swift in Sources */,
+				DAEDB5D82074D95F00DC14B9 /* UITableView+Rx.swift in Sources */,
 				D71C334C1FE2354C004E434B /* AbstractViewController.swift in Sources */,
 				DA80B24F1FD40AB10047A5F9 /* BaseViewModel.swift in Sources */,
+				DAEDB5DA2074DA7300DC14B9 /* UICollectionView+Rx.swift in Sources */,
 				DA80B24E1FD40AB10047A5F9 /* PaginationViewModel.swift in Sources */,
 				DA80B2631FD40AB10047A5F9 /* UIViewController.swift in Sources */,
 				DA80B25B1FD40AB10047A5F9 /* RxCollectionViewSectionedReloadDataSource.swift in Sources */,

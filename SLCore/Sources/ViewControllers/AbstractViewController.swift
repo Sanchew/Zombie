@@ -21,6 +21,8 @@ open class AbstractViewController: UIViewController, StoryboardInitialize {
         return nil
     }
     
+    open var _viewModel: BaseViewModel!
+    
     open override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let this = self as? AutoDismissKeyboardable {
             for input in this.inputViews where input.isFirstResponder {

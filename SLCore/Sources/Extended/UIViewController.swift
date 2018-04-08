@@ -14,20 +14,35 @@ public protocol StoryboardInitialize {
     static var bundle: Bundle? { get }
 }
 
-public extension StoryboardInitialize where Self: AbstractViewController {
+public extension StoryboardInitialize {
+    public static var identifier: String {
+        return String(describing: self)
+    }
 
-//    public static var identifier: String {
-//        return String(describing: self)
+    public static var storyboard: String {
+        return "Main"
+    }
+
+    public static var bundle: Bundle? {
+        return nil
+    }
+}
+
+//public extension StoryboardInitialize where Self: AbstractViewController {
+//
+//    public static func make()-> Self {
+//        let storyboard = UIStoryboard(name: self.storyboard, bundle: self.bundle)
+//        let instantiateOptinal = storyboard.instantiateViewController(withIdentifier: self.identifier)
+//        guard let instance = instantiateOptinal as? Self else {
+//            fatalError("Couldn't instantiate view controller with identifier \(self.identifier) in storyboard \(self.storyboard)")
+//        }
+//        return instance
 //    }
-//    
-//    public static var storyboard: String {
-//        return "Main"
-//    }
-//    
-//    public static var bundle: Bundle? {
-//        return nil
-//    }
-//    
+//
+//}
+
+public extension StoryboardInitialize {
+    
     public static func make()-> Self {
         let storyboard = UIStoryboard(name: self.storyboard, bundle: self.bundle)
         let instantiateOptinal = storyboard.instantiateViewController(withIdentifier: self.identifier)
@@ -36,7 +51,6 @@ public extension StoryboardInitialize where Self: AbstractViewController {
         }
         return instance
     }
-
 }
 
 //extension UIViewController: StoryboardInitialize { }

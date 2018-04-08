@@ -12,7 +12,11 @@ import RxSwift
 
 open class BaseViewController<VM: BaseViewModel>: AbstractViewController {
 
-    open var viewModel: VM!
+    open var viewModel: VM! {
+        didSet {
+            super._viewModel = viewModel
+        }
+    }
     
     open var receiver: AnyObserver<EventType> {
         return viewModel.eventReceiver
