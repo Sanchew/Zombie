@@ -120,6 +120,7 @@ extension Refreshable {
                 }
             case .endWithNoMore:
                 scrollView.mj_header?.endRefreshing()
+		scrollView.mj_footer?.isHidden = false
                 scrollView.mj_footer?.endRefreshingWithNoMoreData()
             }
         }, onDisposed: {
