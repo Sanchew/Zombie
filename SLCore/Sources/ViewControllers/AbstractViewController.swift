@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RxSwift
 
 open class AbstractViewController: UIViewController, StoryboardInitialize {
 
@@ -54,7 +55,34 @@ open class AbstractViewController: UIViewController, StoryboardInitialize {
     }
     
     open func setupBindings() {
-        
+        let showKeyboard = NotificationCenter.default.rx.notification(Notification.Name.UIKeyboardWillShow).flatMap { [weak self] (sender) -> Observable<CGFloat> in
+            guard let `self` = self, let _ = self.view.window else { return .empty() }
+            if let keyboardHeight = (sender.userInfo?[UIKeyboardFrameEndUserInfoKey] as? CGRect)?.height {
+                return .just(keyboardHeight)
+            }
+            return .empty()
+        }.share()
+        showKeyboard.bind { [weak self] (keyboardHeight) in
+            guard let `self` = self, let _ = self.view.window else { return }
+            if let view = self.view.findFirstResponder() {
+                let frame = view.convert(view.bounds, to: self.view)
+                let navigationBarHeight = self.navigationController?.navigationBar.frame.maxY ?? 0
+                let offset = (self.view.frame.height - keyboardHeight - frame.maxY + navigationBarHeight)
+                
+                if (offset >= navigationBarHeight) {
+                    return
+                }
+                UIView.animate(withDuration: 0.3, animations: {
+                    self.view.frame = CGRect(x: 0, y: offset, width: self.view.frame.width, height: self.view.frame.height)
+                })
+            }
+        }.disposed(by: disposeBag)
+        NotificationCenter.default.rx.notification(Notification.Name.UIKeyboardWillHide).skipUntil(showKeyboard).bind { [weak self] (_) in
+            guard let `self` = self, let _ = self.view.window  else { return }
+            UIView.animate(withDuration: 0.3, animations: {
+                self.view.frame = CGRect(x: 0, y: self.navigationController?.navigationBar.frame.maxY ?? 0, width: self.view.frame.width, height: self.view.frame.height)
+            })
+        }.disposed(by: disposeBag)
     }
     
 

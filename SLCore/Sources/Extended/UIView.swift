@@ -70,6 +70,19 @@ extension UIView: FillingData { }
 // MARK: -
 public extension UIView {
     
+    public func findFirstResponder() -> UIView? {
+        let responder: UIView = self
+        if responder.isFirstResponder {
+            return responder
+        }
+        for view in self.subviews {
+            if let first = view.findFirstResponder() {
+                return first
+            }
+        }
+        return nil
+    }
+    
     public func addConstraints(with formats: [String], views: [String: Any]) {
         formats.forEach { (format) in
             addConstraints(with: format, views: views)
