@@ -17,7 +17,6 @@ public struct AnyDataViewModel<Base> {
     public var _datas: ReplaySubject<Any> {
         return _viewModel._datas
     }
-    
 }
 
 private var viewModelKey = "viewModel"
@@ -28,8 +27,6 @@ public protocol AnyDataViewModelCompatible {
 }
 
 public extension AnyDataViewModelCompatible {
-    typealias Base = UIView
-    // 查找为何 struct 不能这样用  中间的 let _viewModel 发生了变化 所以这个只存DataViewModel
     public var viewModel: AnyDataViewModel<Self> {
         var viewModel = objc_getAssociatedObject(self, &viewModelKey) as? DataViewModel<Any>
         if viewModel == nil {
@@ -40,7 +37,10 @@ public extension AnyDataViewModelCompatible {
     }
 }
 
-extension UIView: AnyDataViewModelCompatible { }
+extension UIView: AnyDataViewModelCompatible {
+    public typealias Base = UIView
+    
+}
 
 // MARK: - FillData
 public protocol FillingData {
