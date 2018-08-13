@@ -33,7 +33,11 @@ public func <<<Key,Value: Decodable>(container: KeyedDecodingContainer<Key>, key
     return try! container.decode(Value.self, forKey: key)
 }
 
-infix operator <<~
+infix operator <<~: DecoderPrecedence
+precedencegroup DecoderPrecedence {
+    associativity: left
+    higherThan: BitwiseShiftPrecedence
+}
 public func <<~<Key,Value: Decodable>(container: KeyedDecodingContainer<Key>, key: Key) -> Value? {
     if container.contains(key) {
         return try! container.decodeIfPresent(Value.self, forKey: key)
