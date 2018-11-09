@@ -29,7 +29,7 @@ open class BaseTableViewCell<E>: AbstractTableViewCell, DataTypeCompromise {
             }.asObserver()
     }
     
-    public override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    public override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupUI()
         setupBindings()

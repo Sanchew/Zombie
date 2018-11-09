@@ -23,15 +23,15 @@ public extension String {
         return Double(self) ?? 0
     }
     
-    public func height(by width: CGFloat, font: UIFont? = nil, attributes: [NSAttributedStringKey: AnyObject]? = nil) -> CGFloat {
+    public func height(by width: CGFloat, font: UIFont? = nil, attributes: [NSAttributedString.Key: AnyObject]? = nil) -> CGFloat {
         return size(by: CGSize(width: width, height: 0), font: font, attributes: attributes).height
     }
     
-    public func size(by size: CGSize, font: UIFont? = nil, attributes: [NSAttributedStringKey: AnyObject]? = nil) -> CGSize {
+    public func size(by size: CGSize, font: UIFont? = nil, attributes: [NSAttributedString.Key: AnyObject]? = nil) -> CGSize {
         let options: NSStringDrawingOptions = NSStringDrawingOptions(rawValue: NSStringDrawingOptions.usesFontLeading.rawValue | NSStringDrawingOptions.usesLineFragmentOrigin.rawValue)
-        var _attributes = [NSAttributedStringKey: AnyObject]()
+        var _attributes = [NSAttributedString.Key: AnyObject]()
         if let font = font {
-            _attributes[NSAttributedStringKey.font] = font
+            _attributes[NSAttributedString.Key.font] = font
         }
         if let attributes = attributes {
             for (key, value) in attributes {
@@ -39,12 +39,12 @@ public extension String {
             }
         }
         
-        if let style = attributes?[NSAttributedStringKey.paragraphStyle] as? NSMutableParagraphStyle, style.lineBreakMode == .byWordWrapping {
+        if let style = attributes?[NSAttributedString.Key.paragraphStyle] as? NSMutableParagraphStyle, style.lineBreakMode == .byWordWrapping {
             style.lineBreakMode = .byCharWrapping
         }else {
             let style = NSMutableParagraphStyle()
             style.lineBreakMode = .byCharWrapping
-            _attributes[NSAttributedStringKey.paragraphStyle] = style
+            _attributes[NSAttributedString.Key.paragraphStyle] = style
         }
         return NSString(string: self).boundingRect(with: size, options: options, attributes: _attributes, context: nil).size
     }

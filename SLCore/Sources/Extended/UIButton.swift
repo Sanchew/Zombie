@@ -12,12 +12,12 @@ import Kingfisher
 
 public extension UIButton {
     
-    public func setImage(with URLString: String, for state: UIControlState = .normal) {
+    public func setImage(with URLString: String, for state: UIControl.State = .normal) {
         if let url = URL(string: URLString) {
             setImage(with: url, for: state)
         }
     }
-    public func setImage(with URL: URL, for state: UIControlState) {
+    public func setImage(with URL: URL, for state: UIControl.State) {
         kf.setImage(with: URL, for: state)
     }
     

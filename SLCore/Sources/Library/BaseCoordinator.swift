@@ -18,7 +18,7 @@ open class BaseCoordinator<ResultType> {
     typealias CoordinationResult = ResultType
 
     /// Utility `DisposeBag` used by the subclasses.
-    open let disposeBag = DisposeBag()
+    public let disposeBag = DisposeBag()
     
     public var coordinators: [Any] {
         return self.childCoordinators.map({ $0.value })

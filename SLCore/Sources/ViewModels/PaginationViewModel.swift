@@ -13,7 +13,7 @@ import RxCocoa
 open class PaginationViewModel<V>: DataViewModel<V>, Refreshable {
     
     // MARK: - Protected
-    open let _page = Variable<Int>(1)
+    public let _page = Variable<Int>(1)
     
     // MARK: - Inputs
     open var flip: AnyObserver<RefreshEvent> {

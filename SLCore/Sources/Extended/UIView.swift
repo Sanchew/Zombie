@@ -132,12 +132,12 @@ public extension UIViewInitWithNib where Self: UIView {
         return String(describing: self)
     }
     
-    public static func loadFormNib(withOwner owner: Any? = nil, options: [AnyHashable: Any]? = nil) -> Self {
+    public static func loadFromNib(withOwner owner: Any? = nil, options: [AnyHashable: Any]? = nil) -> Self {
         return load(from: nibName, owner: owner, options: options)
     }
     
     public static func load(from nibName: String, owner: Any? = nil, options: [AnyHashable: Any]? = nil) -> Self {
-        let ins = UINib(nibName: nibName, bundle: nil).instantiate(withOwner: owner, options: options).first
+        let ins = UINib(nibName: nibName, bundle: nil).instantiate(withOwner: owner, options: options as? [UINib.OptionsKey : Any]).first
         guard let instance = ins as? Self else {
             fatalError("Couldn't instantiate view with nibName \(NSStringFromClass(self))")
         }
