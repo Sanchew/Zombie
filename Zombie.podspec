@@ -1,14 +1,14 @@
 Pod::Spec.new do |s|
 
-  s.name         = "SLCore"
-  s.version      = "0.0.2"
+  s.name         = "Zombie"
+  s.version      = "0.1.0"
   s.summary      = "The RxSwift-based viper framework"
   
   s.description  = <<-DESC
 		    This is a framework based on rxswift and moya, which is currently under development and has only a few basic features but is already a very good MVVM framework
   		 DESC
   
-  s.homepage     = "https://github.com/Sanchew/SLCore"
+  s.homepage     = "https://github.com/Sanchew/Zombie"
   
   s.license      = { :type => "MIT", :file => "LICENSE" }
   
@@ -16,9 +16,9 @@ Pod::Spec.new do |s|
   
   s.platform     = :ios, "8.0"
   
-  s.source       = { :git => "https://github.com/sanchew/SLCore.git", :tag => s.version}
+  s.source       = { :git => "https://github.com/sanchew/Zombie.git", :tag => s.version}
   
-  s.source_files = "SLCore/Sources/**/*.swift"
+  s.source_files = "Zombie/Sources/**/*.swift"
   
   s.requires_arc = true
   

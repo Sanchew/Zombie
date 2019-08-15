@@ -26,6 +26,18 @@ DEPENDENCIES:
   - RxFeedback
   - RxOptional
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Differentiator
+    - Kingfisher
+    - MJRefresh
+    - RxAtomic
+    - RxCocoa
+    - RxDataSources
+    - RxFeedback
+    - RxOptional
+    - RxSwift
+
 SPEC CHECKSUMS:
   Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
@@ -37,6 +49,6 @@ SPEC CHECKSUMS:
   RxOptional: bd32ff8ca9df4177683d56ffeb618a9d4d5d5cad
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
 
-PODFILE CHECKSUM: 75b2629d2c82110bef21ed132abc6ae09c807a0a
+PODFILE CHECKSUM: 34b703adcfc29e3e46be4fa8e4eb4425de0d2317
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3

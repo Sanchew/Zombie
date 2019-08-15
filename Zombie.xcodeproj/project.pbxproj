@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7B7752A3FC180673F664C2CF /* Pods_SLCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98276A8CC671D6D9105A75E4 /* Pods_SLCore.framework */; };
+		A67C757454B94EB12E73F16F /* Pods_Zombie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 391F18BBB0AE65A9FD1AB104 /* Pods_Zombie.framework */; };
 		D71C334C1FE2354C004E434B /* AbstractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71C334B1FE2354C004E434B /* AbstractViewController.swift */; };
 		D7F8220A1FE0D4AE006A8D6D /* AbstractCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F822081FE0D4AE006A8D6D /* AbstractCollectionViewCell.swift */; };
 		D7F8220B1FE0D4AE006A8D6D /* AbstractTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F822091FE0D4AE006A8D6D /* AbstractTableViewCell.swift */; };
@@ -53,14 +53,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		22257FE120BDD918124A98C6 /* Pods-SLCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLCore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SLCore/Pods-SLCore.debug.xcconfig"; sourceTree = "<group>"; };
-		98276A8CC671D6D9105A75E4 /* Pods_SLCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SLCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		391F18BBB0AE65A9FD1AB104 /* Pods_Zombie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zombie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		583690B60FB3CDE780A5C711 /* Pods-Zombie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zombie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zombie/Pods-Zombie.debug.xcconfig"; sourceTree = "<group>"; };
+		AB896F95842EBD539236E7FB /* Pods-Zombie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zombie.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zombie/Pods-Zombie.release.xcconfig"; sourceTree = "<group>"; };
 		D71C334B1FE2354C004E434B /* AbstractViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractViewController.swift; sourceTree = "<group>"; };
 		D7F822081FE0D4AE006A8D6D /* AbstractCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractCollectionViewCell.swift; sourceTree = "<group>"; };
 		D7F822091FE0D4AE006A8D6D /* AbstractTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractTableViewCell.swift; sourceTree = "<group>"; };
 		DA278ACB2004ADD800012B30 /* AutoDismissKeyboardable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoDismissKeyboardable.swift; sourceTree = "<group>"; };
 		DA478C6F2008A4560051D6C1 /* Nil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nil.swift; sourceTree = "<group>"; };
-		DA80B1801FD3FC3C0047A5F9 /* SLCore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLCore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA80B1801FD3FC3C0047A5F9 /* Zombie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zombie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA80B1831FD3FC3C0047A5F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA80B1851FD3FC3C0047A5F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DA80B1881FD3FC3C0047A5F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -99,7 +100,6 @@
 		DAEDB5D72074D95F00DC14B9 /* UITableView+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Rx.swift"; sourceTree = "<group>"; };
 		DAEDB5D92074DA7300DC14B9 /* UICollectionView+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Rx.swift"; sourceTree = "<group>"; };
 		DAFE9AC4202D918F00B407B5 /* Refreshable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Refreshable.swift; sourceTree = "<group>"; };
-		E39AD567178E844F06E547A1 /* Pods-SLCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLCore.release.xcconfig"; path = "Pods/Target Support Files/Pods-SLCore/Pods-SLCore.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B7752A3FC180673F664C2CF /* Pods_SLCore.framework in Frameworks */,
+				A67C757454B94EB12E73F16F /* Pods_Zombie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,7 +117,7 @@
 		01140386DF82F086B726B50E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				98276A8CC671D6D9105A75E4 /* Pods_SLCore.framework */,
+				391F18BBB0AE65A9FD1AB104 /* Pods_Zombie.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -125,8 +125,8 @@
 		8F48ADF2F005C38FD3A987FD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				22257FE120BDD918124A98C6 /* Pods-SLCore.debug.xcconfig */,
-				E39AD567178E844F06E547A1 /* Pods-SLCore.release.xcconfig */,
+				583690B60FB3CDE780A5C711 /* Pods-Zombie.debug.xcconfig */,
+				AB896F95842EBD539236E7FB /* Pods-Zombie.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -134,7 +134,7 @@
 		DA80B1771FD3FC3C0047A5F9 = {
 			isa = PBXGroup;
 			children = (
-				DA80B1821FD3FC3C0047A5F9 /* SLCore */,
+				DA80B1821FD3FC3C0047A5F9 /* Zombie */,
 				DA80B1811FD3FC3C0047A5F9 /* Products */,
 				8F48ADF2F005C38FD3A987FD /* Pods */,
 				01140386DF82F086B726B50E /* Frameworks */,
@@ -144,12 +144,12 @@
 		DA80B1811FD3FC3C0047A5F9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DA80B1801FD3FC3C0047A5F9 /* SLCore.app */,
+				DA80B1801FD3FC3C0047A5F9 /* Zombie.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DA80B1821FD3FC3C0047A5F9 /* SLCore */ = {
+		DA80B1821FD3FC3C0047A5F9 /* Zombie */ = {
 			isa = PBXGroup;
 			children = (
 				DA80B22B1FD40AB10047A5F9 /* Sources */,
@@ -160,7 +160,7 @@
 				DA80B18C1FD3FC3C0047A5F9 /* LaunchScreen.storyboard */,
 				DA80B18F1FD3FC3C0047A5F9 /* Info.plist */,
 			);
-			path = SLCore;
+			path = Zombie;
 			sourceTree = "<group>";
 		};
 		DA80B22B1FD40AB10047A5F9 /* Sources */ = {
@@ -266,24 +266,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DA80B17F1FD3FC3C0047A5F9 /* SLCore */ = {
+		DA80B17F1FD3FC3C0047A5F9 /* Zombie */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA80B1921FD3FC3C0047A5F9 /* Build configuration list for PBXNativeTarget "SLCore" */;
+			buildConfigurationList = DA80B1921FD3FC3C0047A5F9 /* Build configuration list for PBXNativeTarget "Zombie" */;
 			buildPhases = (
 				12AE32C6CA8FEF6E1DAFEC47 /* [CP] Check Pods Manifest.lock */,
 				DA80B17C1FD3FC3C0047A5F9 /* Sources */,
 				DA80B17D1FD3FC3C0047A5F9 /* Frameworks */,
 				DA80B17E1FD3FC3C0047A5F9 /* Resources */,
 				C0F59396EA04A33771591575 /* [CP] Embed Pods Frameworks */,
-				D06A70EB0E2201571ACF0BD0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SLCore;
-			productName = SLCore;
-			productReference = DA80B1801FD3FC3C0047A5F9 /* SLCore.app */;
+			name = Zombie;
+			productName = Zombie;
+			productReference = DA80B1801FD3FC3C0047A5F9 /* Zombie.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -303,7 +302,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DA80B17B1FD3FC3C0047A5F9 /* Build configuration list for PBXProject "SLCore" */;
+			buildConfigurationList = DA80B17B1FD3FC3C0047A5F9 /* Build configuration list for PBXProject "Zombie" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -316,7 +315,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DA80B17F1FD3FC3C0047A5F9 /* SLCore */,
+				DA80B17F1FD3FC3C0047A5F9 /* Zombie */,
 			);
 		};
 /* End PBXProject section */
@@ -346,7 +345,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SLCore-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Zombie-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -359,7 +358,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SLCore/Pods-SLCore-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-Zombie/Pods-Zombie-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
@@ -384,22 +383,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SLCore/Pods-SLCore-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D06A70EB0E2201571ACF0BD0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SLCore/Pods-SLCore-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zombie/Pods-Zombie-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -586,14 +570,14 @@
 		};
 		DA80B1931FD3FC3C0047A5F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22257FE120BDD918124A98C6 /* Pods-SLCore.debug.xcconfig */;
+			baseConfigurationReference = 583690B60FB3CDE780A5C711 /* Pods-Zombie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 68PHY3J9ZA;
-				INFOPLIST_FILE = SLCore/Info.plist;
+				DEVELOPMENT_TEAM = F9KZ3Y25M2;
+				INFOPLIST_FILE = Zombie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ml.sanchew.SLCore;
+				PRODUCT_BUNDLE_IDENTIFIER = ml.sanchew.Zombie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -602,14 +586,14 @@
 		};
 		DA80B1941FD3FC3C0047A5F9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E39AD567178E844F06E547A1 /* Pods-SLCore.release.xcconfig */;
+			baseConfigurationReference = AB896F95842EBD539236E7FB /* Pods-Zombie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 68PHY3J9ZA;
-				INFOPLIST_FILE = SLCore/Info.plist;
+				DEVELOPMENT_TEAM = F9KZ3Y25M2;
+				INFOPLIST_FILE = Zombie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ml.sanchew.SLCore;
+				PRODUCT_BUNDLE_IDENTIFIER = ml.sanchew.Zombie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -619,7 +603,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DA80B17B1FD3FC3C0047A5F9 /* Build configuration list for PBXProject "SLCore" */ = {
+		DA80B17B1FD3FC3C0047A5F9 /* Build configuration list for PBXProject "Zombie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA80B1901FD3FC3C0047A5F9 /* Debug */,
@@ -628,7 +612,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA80B1921FD3FC3C0047A5F9 /* Build configuration list for PBXNativeTarget "SLCore" */ = {
+		DA80B1921FD3FC3C0047A5F9 /* Build configuration list for PBXNativeTarget "Zombie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA80B1931FD3FC3C0047A5F9 /* Debug */,

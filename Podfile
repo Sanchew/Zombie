@@ -3,7 +3,7 @@ platform :ios, '8.0'
 # Disable warning
 inhibit_all_warnings!
 
-target 'SLCore' do
+target 'Zombie' do
   use_frameworks!
 
   # pod 'STRegex'
