@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '8.0'
+platform :ios, '10.0'
 # Disable warning
 inhibit_all_warnings!
 
@@ -9,7 +9,7 @@ target 'Zombie' do
   # pod 'STRegex'
 
   # pod 'Aspects'
-  # pod 'ReSwift','~> 4.0'
+  # pod 'ReSwift','~> 5.0'
   # pod 'Moya/RxSwift'
   pod 'RxDataSources'
   pod 'RxCocoa'

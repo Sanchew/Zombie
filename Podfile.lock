@@ -1,22 +1,23 @@
 PODS:
-  - Differentiator (3.1.0)
-  - Kingfisher (4.10.1)
-  - MJRefresh (3.1.15.7)
-  - RxAtomic (4.4.0)
-  - RxCocoa (4.4.0):
-    - RxSwift (~> 4.0)
-  - RxDataSources (3.1.0):
-    - Differentiator (~> 3.0)
-    - RxCocoa (~> 4.0)
-    - RxSwift (~> 4.0)
-  - RxFeedback (1.1.0):
-    - RxCocoa (~> 4.0)
-    - RxSwift (~> 4.0)
-  - RxOptional (3.5.0):
-    - RxCocoa (~> 4.0)
-    - RxSwift (~> 4.0)
-  - RxSwift (4.4.0):
-    - RxAtomic (~> 4.4)
+  - Differentiator (4.0.1)
+  - Kingfisher (5.7.1)
+  - MJRefresh (3.2.0)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxFeedback (3.0.0):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxOptional (4.0.0):
+    - RxCocoa (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
 
 DEPENDENCIES:
   - Kingfisher
@@ -27,28 +28,28 @@ DEPENDENCIES:
   - RxOptional
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - Differentiator
     - Kingfisher
     - MJRefresh
-    - RxAtomic
     - RxCocoa
     - RxDataSources
     - RxFeedback
     - RxOptional
+    - RxRelay
     - RxSwift
 
 SPEC CHECKSUMS:
-  Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
-  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
-  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
-  RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
-  RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
-  RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
-  RxFeedback: 88c15e9733bdb72d1dfa8222e82fc2f8f6bdc598
-  RxOptional: bd32ff8ca9df4177683d56ffeb618a9d4d5d5cad
-  RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  Kingfisher: 176d377ad339113c99ad4980cbae687f807e20fe
+  MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxFeedback: 4260d8dad5bba28b182c0b9ff5bce68c260de183
+  RxOptional: 9904e2219d59260c3c171273d475b2126de187e8
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
 
-PODFILE CHECKSUM: 34b703adcfc29e3e46be4fa8e4eb4425de0d2317
+PODFILE CHECKSUM: 8aaab527b733cf5ee191a3546300d19820511f81
 
 COCOAPODS: 1.8.0.beta.1

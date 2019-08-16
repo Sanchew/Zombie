@@ -106,7 +106,7 @@ extension Refreshable {
             }
             scrollView.mj_footer?.isHidden = true
         }
-        return self._refreshStatus.delay(0, scheduler: MainScheduler.asyncInstance).subscribe(onNext: { (state) in
+        return self._refreshStatus.delay(.milliseconds(0), scheduler: MainScheduler.asyncInstance).subscribe(onNext: { (state) in
             switch state {
             case .end:
                 if let header = scrollView.mj_header, header.isRefreshing {

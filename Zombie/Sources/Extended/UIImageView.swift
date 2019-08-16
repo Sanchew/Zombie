@@ -29,7 +29,7 @@ public extension UIImageView {
         }
     }
     func setImage(with URL: URL, placeholderImage: UIImage? = nil) {
-        self.kf.setImage(with: URL, placeholder: placeholderImage, options: nil, progressBlock: nil, completionHandler: nil)
+        self.kf.setImage(with: Source.network(URL), placeholder: placeholderImage, options: nil, progressBlock: nil, completionHandler: nil)
     }
     
 }

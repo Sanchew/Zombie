@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Zombie"
-  s.version      = "0.1.0"
+  s.version      = "0.2.0"
   s.summary      = "The RxSwift-based viper framework"
   
   s.description  = <<-DESC
@@ -14,27 +14,27 @@ Pod::Spec.new do |s|
   
   s.author       = { "sanchew" => "sanchew@mail.com" }
   
-  s.platform     = :ios, "8.0"
+  s.platform     = :ios, "10.0"
   
   s.source       = { :git => "https://github.com/sanchew/Zombie.git", :tag => s.version}
 
-  s.swift_version = '4.0'
+  s.swift_version = '5.0'
   
   s.source_files = "Zombie/Sources/**/*.swift"
   
   s.requires_arc = true
   
-  s.dependency 'RxSwift', '~> 4.0'
-  s.dependency 'RxCocoa', '~> 4.0'
-  s.dependency 'RxDataSources', '~> 3.0'
-  s.dependency 'RxOptional', '~> 3.3'
-  s.dependency 'RxFeedback', '~> 1.0'
-  s.dependency 'Moya/RxSwift', '~> 10.0'
-  s.dependency 'Kingfisher', '~> 4.3'
+  s.dependency 'RxSwift', '~> 5.0'
+  s.dependency 'RxCocoa', '~> 5.0'
+  s.dependency 'RxDataSources', '~> 4.0'
+  s.dependency 'RxOptional', '~> 4.0'
+  s.dependency 'RxFeedback', '~> 3.0'
+  s.dependency 'Moya/RxSwift', '~> 14.0.0-alpha.2'
+  s.dependency 'Kingfisher', '~> 5.0'
 
   s.dependency 'MJRefresh', '~> 3.1'
   
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5.0' }
  
   s.frameworks   = "UIKit"
 
