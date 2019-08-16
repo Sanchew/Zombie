@@ -9,7 +9,7 @@ import Foundation
 
 
 public extension Optional {
-    public var isNil: Bool {
+    var isNil: Bool {
         switch self {
         case .none:
             return true
@@ -17,7 +17,7 @@ public extension Optional {
             return false
         }
     }
-    public var isNotNil: Bool {
+    var isNotNil: Bool {
         return !isNil
     }
     

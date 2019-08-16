@@ -11,7 +11,7 @@ import RxSwift
 
 public extension NSObject {
     static var disposeBagKey = "disposeBag"
-    public var disposeBag: DisposeBag {
+    var disposeBag: DisposeBag {
         get{
             if let disposeBag = objc_getAssociatedObject(self, &NSObject.disposeBagKey) as? DisposeBag {
                 return disposeBag

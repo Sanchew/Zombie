@@ -27,7 +27,7 @@ DEPENDENCIES:
   - RxOptional
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Differentiator
     - Kingfisher
     - MJRefresh
@@ -51,4 +51,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 34b703adcfc29e3e46be4fa8e4eb4425de0d2317
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.0.beta.1

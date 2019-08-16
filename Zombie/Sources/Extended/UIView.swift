@@ -27,7 +27,7 @@ public protocol AnyDataViewModelCompatible {
 }
 
 public extension AnyDataViewModelCompatible {
-    public var viewModel: AnyDataViewModel<Self> {
+    var viewModel: AnyDataViewModel<Self> {
         var viewModel = objc_getAssociatedObject(self, &viewModelKey) as? DataViewModel<Any>
         if viewModel == nil {
             viewModel = DataViewModel<Any>()
@@ -53,13 +53,13 @@ public protocol DataTypeCompromise {
 }
 
 public extension AnyDataViewModel where Base: DataTypeCompromise {
-    public var datas: Observable<Base.D> {
+    var datas: Observable<Base.D> {
         return self._viewModel.datas.availableMap{ $0 as? Base.D }
     }
 }
 
 public extension FillingData where Self: UIView{
-    public func fill(by data: Any?) {
+    func fill(by data: Any?) {
         guard let data = data else { return }
         self.viewModel._datas.onNext(data)
     }
@@ -70,7 +70,7 @@ extension UIView: FillingData { }
 // MARK: -
 public extension UIView {
     
-    public func findFirstResponder() -> UIView? {
+    func findFirstResponder() -> UIView? {
         let responder: UIView = self
         if responder.isFirstResponder {
             return responder
@@ -83,17 +83,17 @@ public extension UIView {
         return nil
     }
     
-    public func addConstraints(with formats: [String], views: [String: Any]) {
+    func addConstraints(with formats: [String], views: [String: Any]) {
         formats.forEach { (format) in
             addConstraints(with: format, views: views)
         }
     }
     
-    public func addConstraints(with format: String, views:[String: Any]) {
+    func addConstraints(with format: String, views:[String: Any]) {
        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: format, options: .directionLeadingToTrailing, metrics: nil, views: views))
     }
     
-    public func setupShadow(with radius: CGFloat = 3, color: UIColor = .black, offset: CGSize = .zero, opacity: Float = 0.6) {
+    func setupShadow(with radius: CGFloat = 3, color: UIColor = .black, offset: CGSize = .zero, opacity: Float = 0.6) {
 //        layer.shadowRadius = radius
 //        layer.shadowColor = color.cgColor
 //        layer.shadowOffset = offset
@@ -128,15 +128,15 @@ public protocol UIViewInitWithNib {
 
 public extension UIViewInitWithNib where Self: UIView {
  
-    public static var nibName: String {
+    static var nibName: String {
         return String(describing: self)
     }
     
-    public static func loadFromNib(withOwner owner: Any? = nil, options: [AnyHashable: Any]? = nil) -> Self {
+    static func loadFromNib(withOwner owner: Any? = nil, options: [AnyHashable: Any]? = nil) -> Self {
         return load(from: nibName, owner: owner, options: options)
     }
     
-    public static func load(from nibName: String, owner: Any? = nil, options: [AnyHashable: Any]? = nil) -> Self {
+    static func load(from nibName: String, owner: Any? = nil, options: [AnyHashable: Any]? = nil) -> Self {
         let ins = UINib(nibName: nibName, bundle: nil).instantiate(withOwner: owner, options: options as? [UINib.OptionsKey : Any]).first
         guard let instance = ins as? Self else {
             fatalError("Couldn't instantiate view with nibName \(NSStringFromClass(self))")
@@ -155,7 +155,7 @@ public protocol Identifiable {
 
 public extension Identifiable {
     
-    public static var identifier: String {
+    static var identifier: String {
         return String(describing: self)
     }
     

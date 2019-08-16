@@ -37,7 +37,7 @@ DEPENDENCIES:
   - Zombie (from `../`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - Differentiator
     - Kingfisher
@@ -66,8 +66,8 @@ SPEC CHECKSUMS:
   RxFeedback: 640e317bc7f6c4914c39a2063c6d5c0e6c1aa65d
   RxOptional: 80426a0ddbd092573e4c482d8cc13302078c4d5e
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
-  Zombie: 4e643ca563d471a10c21a50e044d9edec5ee3824
+  Zombie: 269254d34556a6876c5f6af4433574905058b7d5
 
 PODFILE CHECKSUM: 56c926da374cf22ac5842057b8fa6ff47fba8bb6
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.0.beta.1

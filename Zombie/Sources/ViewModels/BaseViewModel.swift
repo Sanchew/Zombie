@@ -16,7 +16,7 @@ public protocol EventTypeCompromise {
 }
 
 public extension EventTypeCompromise where Self: ViewModelType {
-    public var event: Observable<E> {
+    var event: Observable<E> {
         return self._event.availableMap{ $0 as? E }
     }
 }
@@ -29,7 +29,7 @@ private var _datasKey = "_datas"
 public extension Datable where Self: BaseViewModel {
 
     // MARK: - Protected
-    public var _datas: ReplaySubject<DataType> {
+    var _datas: ReplaySubject<DataType> {
         if let datas = objc_getAssociatedObject(self, &_datasKey) as? ReplaySubject<DataType> {
             return datas
         }
@@ -39,7 +39,7 @@ public extension Datable where Self: BaseViewModel {
     }
     
     // MARK: - Outputs
-    public var datas: Observable<DataType> {
+    var datas: Observable<DataType> {
         return self._datas.asObservable()
     }
 

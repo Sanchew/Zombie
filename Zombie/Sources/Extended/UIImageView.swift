@@ -11,11 +11,11 @@ import Kingfisher
 
 public extension UIImageView {
     
-    public var size: CGSize {
+    var size: CGSize {
         return frame.size
     }
     
-    public func setImage(with URLString: String, placeholder: String? = nil) {
+    func setImage(with URLString: String, placeholder: String? = nil) {
         var placeholderImage: UIImage? = nil
         if let placeholder = placeholder {
             placeholderImage = UIImage(named: placeholder)
@@ -23,12 +23,12 @@ public extension UIImageView {
         setImage(with: URLString, placeholderImage: placeholderImage)
     }
     
-    public func setImage(with URLString: String, placeholderImage: UIImage?) {
+    func setImage(with URLString: String, placeholderImage: UIImage?) {
         if let url = URL(string: URLString) {
             setImage(with: url, placeholderImage: placeholderImage)
         }
     }
-    public func setImage(with URL: URL, placeholderImage: UIImage? = nil) {
+    func setImage(with URL: URL, placeholderImage: UIImage? = nil) {
         self.kf.setImage(with: URL, placeholder: placeholderImage, options: nil, progressBlock: nil, completionHandler: nil)
     }
     

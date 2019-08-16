@@ -11,23 +11,23 @@ import UIKit
 
 public extension String {
     
-    public var intValue: Int {
+    var intValue: Int {
         return Int(self) ?? 0
     }
     
-    public var floatValue: CGFloat {
+    var floatValue: CGFloat {
         return CGFloat(doubleValue)
     }
     
-    public var doubleValue: Double {
+    var doubleValue: Double {
         return Double(self) ?? 0
     }
     
-    public func height(by width: CGFloat, font: UIFont? = nil, attributes: [NSAttributedString.Key: AnyObject]? = nil) -> CGFloat {
+    func height(by width: CGFloat, font: UIFont? = nil, attributes: [NSAttributedString.Key: AnyObject]? = nil) -> CGFloat {
         return size(by: CGSize(width: width, height: 0), font: font, attributes: attributes).height
     }
     
-    public func size(by size: CGSize, font: UIFont? = nil, attributes: [NSAttributedString.Key: AnyObject]? = nil) -> CGSize {
+    func size(by size: CGSize, font: UIFont? = nil, attributes: [NSAttributedString.Key: AnyObject]? = nil) -> CGSize {
         let options: NSStringDrawingOptions = NSStringDrawingOptions(rawValue: NSStringDrawingOptions.usesFontLeading.rawValue | NSStringDrawingOptions.usesLineFragmentOrigin.rawValue)
         var _attributes = [NSAttributedString.Key: AnyObject]()
         if let font = font {

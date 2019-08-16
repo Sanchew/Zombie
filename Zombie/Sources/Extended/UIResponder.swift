@@ -20,7 +20,7 @@ public protocol EventReceivable {
 
 public extension Reactive where Base: UIResponder {
     
-    public var dispatcher: AnyObserver<EventType> {
+    var dispatcher: AnyObserver<EventType> {
         return Binder<EventType>(self.base) { base, event in
             if let current = base as? EventReceivable {
                 current.receiver.onNext(event)

@@ -14,7 +14,7 @@ import MJRefresh
 
 public extension Reactive where Base: UIScrollView {
     
-    public var nearBottom: Observable<()> {
+    var nearBottom: Observable<()> {
         func isNearBottomEdge(scrollView: UIScrollView, edgeOffset: CGFloat = 20.0) -> Bool {
             return scrollView.contentOffset.y + scrollView.frame.size.height + edgeOffset > scrollView.contentSize.height
         }

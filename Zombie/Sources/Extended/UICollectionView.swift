@@ -10,11 +10,11 @@ import UIKit
 
 public extension UICollectionView {
 
-    public func register(with nibName: String) {
+    func register(with nibName: String) {
         self.register(UINib(nibName: nibName, bundle: nil), forCellWithReuseIdentifier: nibName)
     }
     
-    public func register(with type: UICollectionViewCell.Type) {
+    func register(with type: UICollectionViewCell.Type) {
         self.register(type, forCellWithReuseIdentifier: type.identifier)
     }
     

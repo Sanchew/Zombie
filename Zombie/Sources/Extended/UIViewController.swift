@@ -15,15 +15,15 @@ public protocol StoryboardInitialize {
 }
 
 public extension StoryboardInitialize {
-    public static var identifier: String {
+    static var identifier: String {
         return String(describing: self)
     }
 
-    public static var storyboard: String {
+    static var storyboard: String {
         return "Main"
     }
 
-    public static var bundle: Bundle? {
+    static var bundle: Bundle? {
         return nil
     }
 }
@@ -43,7 +43,7 @@ public extension StoryboardInitialize {
 
 public extension StoryboardInitialize {
     
-    public static func make()-> Self {
+    static func make()-> Self {
         let storyboard = UIStoryboard(name: self.storyboard, bundle: self.bundle)
         let instantiateOptinal = storyboard.instantiateViewController(withIdentifier: self.identifier)
         guard let instance = instantiateOptinal as? Self else {

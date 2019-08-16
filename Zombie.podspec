@@ -17,6 +17,8 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "8.0"
   
   s.source       = { :git => "https://github.com/sanchew/Zombie.git", :tag => s.version}
+
+  s.swift_version = '4.0'
   
   s.source_files = "Zombie/Sources/**/*.swift"
   
