@@ -17,6 +17,7 @@ PODS:
     - RxSwift (~> 4.0)
   - RxSwift (4.4.0):
     - RxAtomic (~> 4.4)
+  - STRegex (2.1.0)
 
 DEPENDENCIES:
   - Kingfisher
@@ -25,6 +26,7 @@ DEPENDENCIES:
   - RxDataSources
   - RxFeedback
   - RxOptional
+  - STRegex
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -37,6 +39,7 @@ SPEC REPOS:
     - RxFeedback
     - RxOptional
     - RxSwift
+    - STRegex
 
 SPEC CHECKSUMS:
   Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
@@ -48,7 +51,8 @@ SPEC CHECKSUMS:
   RxFeedback: 88c15e9733bdb72d1dfa8222e82fc2f8f6bdc598
   RxOptional: bd32ff8ca9df4177683d56ffeb618a9d4d5d5cad
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
+  STRegex: dfa420d93d8c1402956233b3879ec1fc14b45fbe
 
-PODFILE CHECKSUM: 34b703adcfc29e3e46be4fa8e4eb4425de0d2317
+PODFILE CHECKSUM: a03c9ea8b4d72f39871be023e877267b04dc787c
 
 COCOAPODS: 1.8.0.beta.1
