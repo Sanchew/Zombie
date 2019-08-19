@@ -18,6 +18,7 @@ PODS:
   - RxRelay (5.0.0):
     - RxSwift (~> 5)
   - RxSwift (5.0.0)
+  - STRegex (2.1.0)
 
 DEPENDENCIES:
   - Kingfisher
@@ -26,6 +27,7 @@ DEPENDENCIES:
   - RxDataSources
   - RxFeedback
   - RxOptional
+  - STRegex
 
 SPEC REPOS:
   trunk:
@@ -38,6 +40,7 @@ SPEC REPOS:
     - RxOptional
     - RxRelay
     - RxSwift
+    - STRegex
 
 SPEC CHECKSUMS:
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
@@ -49,7 +52,8 @@ SPEC CHECKSUMS:
   RxOptional: 9904e2219d59260c3c171273d475b2126de187e8
   RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  STRegex: dfa420d93d8c1402956233b3879ec1fc14b45fbe
 
-PODFILE CHECKSUM: 8aaab527b733cf5ee191a3546300d19820511f81
+PODFILE CHECKSUM: 296079c61519bba978bea3712a3e3a5a57209fc7
 
 COCOAPODS: 1.8.0.beta.1

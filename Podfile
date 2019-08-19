@@ -6,7 +6,7 @@ inhibit_all_warnings!
 target 'Zombie' do
   use_frameworks!
 
-  # pod 'STRegex'
+  pod 'STRegex'
 
   # pod 'Aspects'
   # pod 'ReSwift','~> 5.0'

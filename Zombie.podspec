@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Zombie"
-  s.version      = "0.2.0"
+  s.version      = "0.2.1"
   s.summary      = "The RxSwift-based viper framework"
   
   s.description  = <<-DESC
@@ -31,6 +31,7 @@ Pod::Spec.new do |s|
   s.dependency 'RxFeedback', '~> 3.0'
   s.dependency 'Moya/RxSwift', '~> 14.0.0-alpha.2'
   s.dependency 'Kingfisher', '~> 5.0'
+  s.dependency 'STRegex', '~> 2.0'
 
   s.dependency 'MJRefresh', '~> 3.1'
   
