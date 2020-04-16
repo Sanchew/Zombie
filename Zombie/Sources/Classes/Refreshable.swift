@@ -110,7 +110,7 @@ extension Refreshable {
             switch state {
             case .end:
                 if let header = scrollView.mj_header, header.isRefreshing {
-                    scrollView.mj_header.endRefreshing()
+                    header.endRefreshing()
                     scrollView.mj_footer?.resetNoMoreData()
                 }else if let footer = scrollView.mj_footer {
                     footer.endRefreshing()

@@ -13,13 +13,13 @@ import RxCocoa
 open class PaginationViewModel<V>: DataViewModel<V>, Refreshable {
     
     // MARK: - Protected
-    public let _page = Variable<Int>(1)
+    public let _page = BehaviorRelay<Int>(value: 1)
     
     // MARK: - Inputs
     open var flip: AnyObserver<RefreshEvent> {
         return Binder<RefreshEvent>(self) { `self`, event in
             if event == .up {
-                self._page.value += 1
+                self._page.accept(self._page.value + 1)
             }else {
                 self.disposeBag = DisposeBag()
                 self.setupBindings()
