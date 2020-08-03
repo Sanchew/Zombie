@@ -22,6 +22,7 @@ open class PaginationViewModel<V>: DataViewModel<V>, Refreshable {
                 self._page.accept(self._page.value + 1)
             }else {
                 self.disposeBag = DisposeBag()
+                self._page.accept(1)
                 self.setupBindings()
             }
             }.asObserver()
