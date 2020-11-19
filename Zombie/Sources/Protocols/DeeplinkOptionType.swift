@@ -10,17 +10,7 @@ import Foundation
 import Regex
 
 public protocol DeepLinkHandle {
-    associatedtype Option: DeepLinkOptionType
-    func deeplinkHandle(_ option: Option) -> Bool
-}
-
-public extension DeepLinkHandle {
-    func deeplinkHandle(_ option: DeepLinkOptionType) -> Bool {
-        if let option = option as? Option {
-            return self.deeplinkHandle(option)
-        }
-        return false
-    }
+    func deeplinkHandle(_ option: DeepLinkOptionType) -> Bool
 }
 
 public protocol DeepLinkOptionType {

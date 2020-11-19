@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 
 open class PlainCoordinator<T, O: DeepLinkOptionType>: BaseCoordinator<T>, DeepLinkHandle {
-    public typealias Option = O
+    
     public let rootViewController: UIViewController
     public let readyState = ReplaySubject<Bool>.create(bufferSize: 1)
     
@@ -32,7 +32,7 @@ open class PlainCoordinator<T, O: DeepLinkOptionType>: BaseCoordinator<T>, DeepL
         return self
     }
     
-    open func deeplinkHandle(_ option: O) -> Bool {
+    open func deeplinkHandle(_ option: DeepLinkOptionType) -> Bool {
         for handle in self.coordinators.map({ $0 as? DeepLinkHandle }).filter({ $0.isNotNil }).map({ $0! }) {
             if handle.deeplinkHandle(option) {
                 return true
